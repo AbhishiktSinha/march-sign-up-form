@@ -1,0 +1,32 @@
+:root {
+  --accent-red: #ab2f2f;
+  --accent-green: #149800;
+  --accent-blue: #1717ab;
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+button {
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+}
+
+#main {
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}

@@ -1,0 +1,41 @@
+.form-input-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+    width: 100%;
+    
+    >label, .error-prompt {
+        font-size: 14px;
+    }
+
+    >input {
+        border: 2px solid var(--accent-blue);
+        border-radius: 8px;
+        font-size: 18px;
+        color: var(--accent-blue);
+    }
+    .error-prompt {
+        color: var(--accent-red);
+    }
+
+}
+.form-input-container.invalid {
+    >label {
+        color: var(--accent-red);        
+    }
+    >input {
+        border-color: var(--accent-red);
+    }
+}
+.form-input-container.valid {
+    >label {
+        color: var(--accent-green);
+    }
+    >input {
+        border-color: var(--accent-green);
+    }
+}
+input:focus {
+    border-color: var(--accent-blue) !important;
+}
